@@ -12,6 +12,21 @@
 class Solution {
 public:
 	string mergeAlternately(string word1, string word2) {
-
+		std::string merged;
+		int length1 = word1.length();
+		int length2 = word2.length();
+		int i = 0;
+		int j = 0;
+		while (i < length1 && j < length2) {
+			merged += word1[i++];
+			merged += word2[j++];
+		}
+		while (i < length1) {
+			merged += word1[i++];
+		}
+		while (j < length2) {
+			merged += word2[j++];
+		}
+		return merged;
 	}
 };
