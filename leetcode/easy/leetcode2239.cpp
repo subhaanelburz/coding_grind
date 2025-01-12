@@ -12,11 +12,11 @@ class Solution {
 public:
 	int findClosestNumber(vector<int>& nums) {
 		int closest = nums[0];
-
 		for (int x : nums) {
-			if (std::abs(x) < std::abs(closest)) {
+			if (std::abs(x) < std::abs(closest) || (std::abs(x) == std::abs(closest) && x > closest)) {
 				closest = x;
 			}
 		}
+		return closest;
 	}
 };
