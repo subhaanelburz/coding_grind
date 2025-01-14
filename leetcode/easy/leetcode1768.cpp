@@ -5,6 +5,9 @@
 	Merge the strings by adding letters in alternating order, starting with word1. 
 	If a string is longer than the other, append the additional letters onto the end of the merged string.
 	Return the merged string.
+
+	Explanation: First off, we create the merged string and find the lengths of word1 and word2. Then, we create
+	iterators, i and j, and set them equal to zero. Then we have 3 while loops. The first loop 
 */
 
 #include <string>
