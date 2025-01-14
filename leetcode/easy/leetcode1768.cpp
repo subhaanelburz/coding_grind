@@ -7,7 +7,10 @@
 	Return the merged string.
 
 	Explanation: First off, we create the merged string and find the lengths of word1 and word2. Then, we create
-	iterators, i and j, and set them equal to zero. Then we have 3 while loops. The first loop 
+	iterators, i and j, and set them equal to zero. Then we have 3 while loops that will create the merged string.
+	In the first loop, it will add a letter from word1 and then a letter from word2 and alternate until one of the
+	words has been merged entirely. After one word is merged, the second and third while loops will iterate through
+	the remaining i and j values and add the rest of the word at the end, as per the intructions.
 */
 
 #include <string>
